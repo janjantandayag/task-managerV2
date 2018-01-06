@@ -1,0 +1,33 @@
+.view-window {
+    border: 1px solid black;
+    height: 600px;
+    overflow: auto;
+}
+
+table {
+    text-align: center;
+}
+
+.top-nav {
+    background-color: lightgray;
+}
+
+#bottomnav {
+    margin-top: 10px;
+}
+
+#welcome {
+    height: 100%;
+    margin-top: 150px;
+    
+}
+
+.table {
+  table-layout:fixed;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
