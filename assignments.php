@@ -26,7 +26,7 @@
 //BUILD QUERY
                       
         $query = "SELECT * FROM borrower";
-        $select_borrowers_query = mysqli_query($connection, $query);
+        $select_borrowers_query = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
         while($row = mysqli_fetch_assoc($select_borrowers_query)){
             $borrower_id = $row['borrower_id'];

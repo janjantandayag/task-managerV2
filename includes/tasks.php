@@ -31,7 +31,7 @@
 //BUILD QUERY
                       
         $query = "SELECT * FROM tasks $query_extension ORDER BY dueDate ASC LIMIT 30";
-        $select_tasks_query = mysqli_query($connection, $query);
+        $select_tasks_query = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
         while($row = mysqli_fetch_assoc($select_tasks_query)){
             $task_id = $row['ID'];

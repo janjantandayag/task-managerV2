@@ -23,7 +23,7 @@ $borrower_selected = "";
               
               
         $query = "SELECT * FROM borrower $extension";
-        $select_all_borrowers_query = mysqli_query($connection, $query);
+        $select_all_borrowers_query = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
         while($row = mysqli_fetch_assoc($select_all_borrowers_query)){
             $borrower_id = $row['borrower_id'];

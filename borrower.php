@@ -226,7 +226,7 @@ if(!empty($comment_author) && !empty($comment_text)){
    <?php
 
     $query = "SELECT * FROM key_documents WHERE borrower_id = $the_borrower_id";
-    $select_key_documents_sidebar = mysqli_query($connection, $query);
+    $select_key_documents_sidebar = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
    ?>
                    
